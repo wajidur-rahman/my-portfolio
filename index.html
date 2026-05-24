@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabuj Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- নেভিগেশন বার -->
+    <div class="navbar" id="navbar">
+        <div class="logo">Portfolio</div>
+
+        <!-- মডিফাইড অ্যানিমেটেড হ্যামবার্গার আইকন -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero-section">HOME</a></li>
+            <li><a href="#projects-section">PROJECTS</a></li>
+            <li><a href="#skills-section">SKILLS</a></li> 
+            <li><a href="#contact-section">CONTACT</a></li>
+        </ul>
+    </div>
+    
+    <!-- প্রধান ব্যানার সেকশন -->
+    <section class="hero-nav" id="hero-section">
+        <div class="hero-overlay-container">
+            
+            <!-- বাম পাশ: নাম, পরিচয় এবং মডার্ন সোশ্যাল কার্ড গ্রুপ -->
+            <div class="hero-intro-col">
+                <h1>Hello! <br>I am Wajidur</h1>
+                <p class="description">I am Wajidur Rahman Sabuj, a CSE student at Delta Computer Science College. I love learning new technologies and solving real-world problems. Welcome to my creative journey!</p>
+                
+                <!-- হিরো সেকশনের প্রিমিয়াম গ্লাসমরফিক সোশ্যাল বাটন -->
+                <div class="social-btn-group">
+                    <a href="mailto:wajidurrahman5499@gmail.com" class="hero-social-card email-card">
+                        <span class="card-icon">📧</span>
+                        <span class="card-text">Email Me</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/wajidur-rahman-sabuj" target="_blank" class="hero-social-card linkedin-card">
+                        <span class="card-icon">🔗</span>
+                        <span class="card-text">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/wajidur-rahman" target="_blank" class="hero-social-card github-card">
+                        <span class="card-icon">💻</span>
+                        <span class="card-text">GitHub</span>
+                    </a>
+                </div>
+
+                <div class="hero-action-btns">
+                    <button id="scroll-down-btn" class="btn-scroll">Scroll Down ↓</button>
+                    <a href="resume.pdf" target="_blank" class="btn-resume">Resume 📄</a>
+                </div>
+            </div>
+
+            <!-- ডান পাশ: টাইপিং স্কিল ইফেক্ট -->
+            <div class="hero-skills-col">
+                <h2>My Expertise</h2>
+                <p>I specialize in:</p>
+                <div class="typing-container">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- মূল কন্টেইনার -->
+    <div class="container">
+
+        <!-- প্রজেক্ট সেকশন (আপডেটেড বাটন গ্রুপ সহ) -->
+        <div class="projects hidden" id="projects-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-container">
+                
+                <!-- ১. Weather App -->
+                <div class="project-card">
+                    <div class="project-icon">🌤️</div>
+                    <h3>Weather App</h3>
+                    <p>A dynamic web application that fetches real-time weather updates using Weather API. Users can search for any city globally.</p>
+                    <div class="project-links">
+                        <a href="https://wajidur-rahman.github.io/Weather-App/" target="_blank" class="btn-project btn-live">Live Demo 🌐</a>
+                        <a href="https://github.com/wajidur-rahman/Weather-App" target="_blank" class="btn-project btn-code">View Code 💻</a>
+                    </div>
+                </div>
+                
+                <!-- ২. Personal Expense Tracker -->
+                <div class="project-card">
+                    <div class="project-icon">💰</div>
+                    <h3>Expense Tracker</h3>
+                    <p>An interactive tool to track daily incomes and expenses. Features local storage data persistence and analytical breakdown.</p>
+                    <div class="project-links">
+                        <a href="https://wajidur-rahman.github.io/Personal-Expense-Tracker/" target="_blank" class="btn-project btn-live">Live Demo 🌐</a>
+                        <a href="https://github.com/wajidur-rahman/Personal-Expense-Tracker" target="_blank" class="btn-project btn-code">View Code 💻</a>
+                    </div>
+                </div>
+                
+                <!-- ৩. Interactive Quiz App -->
+                <div class="project-card">
+                    <div class="project-icon">🧠</div>
+                    <h3>Quiz App</h3>
+                    <p>A fun and interactive quiz application featuring a countdown timer, dynamic score calculation, and a final result board.</p>
+                    <div class="project-links">
+                        <a href="https://wajidur-rahman.github.io/Interactive-Quiz-App/" target="_blank" class="btn-project btn-live">Live Demo 🌐</a>
+                        <a href="https://github.com/wajidur-rahman/Interactive-Quiz-App" target="_blank" class="btn-project btn-code">View Code 💻</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- স্কিলস সেকশন -->
+        <div class="skills-accordion-section hidden" id="skills-section">
+            <h2 class="section-title">My Skills</h2>
+            <p style="text-align: center; margin-bottom: 30px; color: #666;">Click on each category to explore my technical sub-skills.</p>
+            
+            <div class="accordion-container">
+                
+                <!-- ১. ওয়েব ডেভেলপমেন্ট ক্যাটাগরি -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Web Development</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="sub-skill-list">
+                            <div class="sub-skill-card">HTML</div>
+                            <div class="sub-skill-card">CSS</div>
+                            <div class="sub-skill-card">JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ২. মাইক্রোসফট অফিস ক্যাটাগরি -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Microsoft Office</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="sub-skill-list">
+                            <div class="sub-skill-card">MS Word</div>
+                            <div class="sub-skill-card">MS Excel</div>
+                            <div class="sub-skill-card">MS PowerPoint</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ৩. ভিডিও এডিটিং ক্যাটাগরি -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Video Editing</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="sub-skill-list">
+                            <div class="sub-skill-card">Video Cutting & Transition</div>
+                            <div class="sub-skill-card">Audio Syncing & Mixing</div>
+                            <div class="sub-skill-card">Color Grading</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- কন্ট্যাক্ট সেকশন -->
+        <div class="contact-section hidden" id="contact-section">
+            <h2 class="section-title">Let's Work Together</h2>
+            
+            <div class="contact-wrapper">
+                
+                <!-- বাম কলাম: ইনফরমেশন কার্ড গ্রুপ -->
+                <div class="contact-info-panel">
+                    <h3>Contact Information</h3>
+                    <p class="panel-desc">Have an exciting project or just want to say hello? Drop a message, I'd love to hear from you!</p>
+                    
+                    <div class="info-card-list">
+                        <div class="info-card">
+                            <span class="info-icon">📧</span>
+                            <div class="info-text">
+                                <h4>Email Me</h4>
+                                <a href="mailto:wajidurrahman5499@gmail.com">wajidurrahman5499@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <span class="info-icon">📍</span>
+                            <div class="info-text">
+                                <h4>Location</h4>
+                                <p>Bangladesh</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">💼</span>
+                            <div class="info-text">
+                                <h4>Availability</h4>
+                                <p>Open for Freelance & Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ডান কলাম: প্রিমিয়াম মেসেজ ফর্ম -->
+                <div class="contact-form-panel">
+                    <form class="modern-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="form-group">
+                            <label for="user-name">Your Name</label>
+                            <input type="text" id="user-name" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="user-email">Email Address</label>
+                            <input type="email" id="user-email" placeholder="example@mail.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="user-message">Your Message</label>
+                            <textarea id="user-message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit-form">Send Message 🚀</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ফুটার সেকশন -->
+    <footer class="footer">
+        <p>&copy; Copyright 2026. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="mailto:wajidurrahman5499@gmail.com">Email</a> | 
+            <a href="https://www.linkedin.com/in/wajidur-rahman-sabuj" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/wajidur-rahman" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
